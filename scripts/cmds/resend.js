@@ -41,7 +41,7 @@ module.exports = {
       const name = await usersData.getName(senderID);
       if (getMsg.attachment[0] === undefined) {
         if (getMsg.type === 'message') {
-          api.sendMessage(`🎯${name}🎯\n𝙏𝙪 𝙫𝙚𝙪𝙭 𝙘𝙖𝙘𝙝𝙚𝙧 𝙦𝙪𝙤𝙞 𝙘𝙤𝙢𝙢𝙚 𝙘𝙖?!🧏‍♂️ 𝘿𝙚𝙨𝙤𝙡𝙚 𝙟'𝙫𝙖𝙞𝙨 𝙙𝙚𝙫𝙤𝙞𝙧 𝙢𝙤𝙣𝙩𝙧𝙚𝙧 𝙖 𝙩𝙤𝙪𝙩 𝙡'𝙢𝙤𝙣𝙙𝙚🙎📿\n━━━━━━━━━━━━━━━━\n${getMsg.msgBody}`, threadID);
+          api.sendMessage(`📫${name}📫\n(・_・ヾ𝚍𝚎𝚕𝚎𝚝𝚎𝚍 𝙼𝚜𝚐\n𝗖𝗢𝗡𝗧𝗘𝗡𝗧:\n${getMsg.msgBody}`, threadID);
         } else if (getMsg.type === 'photo' || getMsg.type === 'video') {
           // Resend the image or video here
           api.sendMessage({ attachment: getMsg.attachment }, threadID);
